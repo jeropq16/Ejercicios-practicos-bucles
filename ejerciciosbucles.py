@@ -40,18 +40,29 @@ else:
 
 
 #Ejercicio numero 5
+# Ejercicio número 5
 
-print("Adivina el numero")
+print("Adivina el número")
 
 import random
 numaleatorio = random.randrange(11)
 
-while True:
-    num3 = int(input("Ingresa un numero: "))
+# Establecer el número de intentos
+intentos = 0
+max_intentos = 3
+
+while intentos < max_intentos:
+    num3 = int(input("Ingresa un número: "))
+    intentos += 1  # Incrementamos el contador de intentos
+    
     if num3 == numaleatorio:
-        print("Adivinaste el numero")
+        print("¡Adivinaste el número!")
         break
     elif num3 > numaleatorio:
-        print("El numero es menor")
+        print("El número es menor")
     elif num3 < numaleatorio:
-        print("El numero es mayor")
+        print("El número es mayor")
+    
+    # Verificar si ya se alcanzaron los intentos
+    if intentos == max_intentos:
+        print("no tienes mas intentos, El número era", numaleatorio)
