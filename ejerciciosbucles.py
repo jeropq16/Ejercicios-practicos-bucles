@@ -49,9 +49,9 @@ numaleatorio = random.randrange(11)
 
 # Establecer el número de intentos
 intentos = 0
-max_intentos = 3
+intentosmaximos = 3
 
-while intentos < max_intentos:
+while intentos < intentosmaximos:
     num3 = int(input("Ingresa un número: "))
     intentos += 1  # Incrementamos el contador de intentos
     
