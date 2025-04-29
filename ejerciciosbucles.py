@@ -64,5 +64,5 @@ while intentos < intentosmaximos:
         print("El número es mayor")
     
     # Verificar si ya se alcanzaron los intentos
-    if intentos == max_intentos:
+    if intentos == intentosmaximos:
         print("no tienes mas intentos, El número era", numaleatorio)
